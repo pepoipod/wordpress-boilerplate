@@ -142,3 +142,7 @@ $ make push_pro_db
 # proに全てpushする.
 $ make push_pro_all
 ```
+
+## ドキュメント情報
+記述日: 2018/8/1   
+記述者: 岩本 大樹 iwamoto@cshool.jp
