@@ -16,21 +16,18 @@ setup:
 # frontend
 ##################################
 
-# gulp起動.
-gulp:
-	gulp
+# サーバー起動.
+watch:
+	yarn start
 
-# cssのコンパイル.
-build_styles:
-	gulp styles
-
-# jsのコンパイル.
-build_scripts:
-	gulp scripts
+# production build.
+build:
+	yarn build
 
 # js dllのコンパイル.
-build_scripts-dll:
-	gulp scripts.dll
+rebuild-scripts-dll:
+	rm -f ./.dll/vendor-manifest.json ./web/assets/js/vendor.dll.js
+	npx webpack --config ./webpack.dll.config.js
 
 
 ##################################
