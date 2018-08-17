@@ -104,7 +104,7 @@ __webpack_require__.r(__webpack_exports__);
  // webpackでコンパイルするため必須. 実際には.jsには展開されない.
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
-  window.console.log('hello!?');
+  window.console.log('hello!');
 });
 
 /***/ }),

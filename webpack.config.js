@@ -44,24 +44,23 @@ module.exports = {
     new CopyWebpackPlugin(
       [
         {
-          from: '**/*.html',
+          from: '',
           to: '../__templates/',
+          ignore: [
+            '!*.html'
+          ]
         },
       ],
-      {
-        context: 'frontend'
-      }
+      { context: 'frontend' }
     ),
     new CopyWebpackPlugin(
       [
         {
-          from: '**/*',
+          from: '',
           to: 'images/',
         },
       ],
-      {
-        context: 'frontend/assets/images'
-      }
+      { context: 'frontend/assets/images' }
     ),
     new WriteFilePlugin(),
     function () {
