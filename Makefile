@@ -87,7 +87,7 @@ push_stg_all:
 
 
 ##################################
-# Pull production
+# Pull staging
 ##################################
 
 # stgからthemeをpullする.
